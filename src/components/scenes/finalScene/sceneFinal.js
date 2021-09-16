@@ -1,7 +1,7 @@
 import { Scene } from 'phaser';
 import { getImages, getPlaces } from '../../utils/imageComponents'
 import manFinalText from '../../../assets/men-final-txt.png'
-import menImage from '../../../assets/men-last.png'
+import menImageLast from '../../../assets/men-last.png'
 import playNowButton from '../../../assets/button-play-now.png'
 
 class SceneFinal extends Scene {
@@ -15,7 +15,7 @@ class SceneFinal extends Scene {
         this.load.image('womanFinalhScene', imagesData.girl)
         this.load.image('backgroundPlace', placeIdData)
         this.load.image('manFinalText', manFinalText)
-        this.load.image('menImage', menImage)
+        this.load.image('menImageLast', menImageLast)
 
         this.load.image('playNowButton', playNowButton)
     }
@@ -23,7 +23,7 @@ class SceneFinal extends Scene {
     create() {
         const backgroundFrame = this.add.image(400, 450, 'backgroundPlace')
         backgroundFrame.alpha = 0
-        const menImageFrame = this.add.image(400, 450, 'menImage')
+        const menImageFrame = this.add.image(400, 450, 'menImageLast')
         menImageFrame.alpha = 0
         const womanImageFrame = this.add.image(200, 500, 'womanFinalhScene')
         womanImageFrame.alpha = 0
